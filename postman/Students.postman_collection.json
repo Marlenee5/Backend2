@@ -1,0 +1,153 @@
+{
+  "info": {
+    "_postman_id": "d2bdc7a2-b990-45db-b241-e407c531f75e",
+    "name": "Students",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49448049",
+    "_collection_link": "https://go.postman.co/collection/49448049-d2bdc7a2-b990-45db-b241-e407c531f75e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar Usuarios",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/user",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Usuarios",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Denisse\",\r\n    \"lastName\" :\"Oteiza\",\r\n    \"email\": \"denisseoteiza7@outlook.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/user",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Usuarios por ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/user/696433a7c5e464c917e4449e",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "user",
+            "696433a7c5e464c917e4449e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Usuarios por ID",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Denisse\",\r\n    \"lastName\" :\"Oteiza\",\r\n    \"email\": \"denisseoteiza@outlook.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/user/696433a7c5e464c917e4449e",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "user",
+            "696433a7c5e464c917e4449e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Usuarios por ID",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/user/696433a7c5e464c917e4449e",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "user",
+            "696433a7c5e464c917e4449e"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

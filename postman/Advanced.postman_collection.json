@@ -1,0 +1,270 @@
+{
+  "info": {
+    "_postman_id": "6a54b21d-d754-466b-8439-74ea49710e54",
+    "name": "Advanced",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49448049",
+    "_collection_link": "https://go.postman.co/collection/49448049-6a54b21d-d754-466b-8439-74ea49710e54?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Versionados",
+      "item": [
+        {
+          "name": "Get Students by ID",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\"\r\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/advanced/students/6988f3928e3156a517e5a145",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "advanced",
+                "students",
+                "6988f3928e3156a517e5a145"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Student",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\"\r\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/student/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "student",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get My profile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\"\r\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/me",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "me"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bienvenido",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\"\r\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/student/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "student",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ping",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\"\r\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/advanced/v1/ping",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "advanced",
+            "v1",
+            "ping"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Courses by Student ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\"\r\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/advanced/students/6988f3928e3156a517e5a145/courses",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "advanced",
+            "students",
+            "6988f3928e3156a517e5a145",
+            "courses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Async Error",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\"\r\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/advanced/async-error",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "advanced",
+            "async-error"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
