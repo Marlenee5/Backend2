@@ -1,0 +1,115 @@
+{
+  "info": {
+    "_postman_id": "8bd797ae-db70-493c-bd3e-1815783e9548",
+    "name": "Session Auth",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49448049",
+    "_collection_link": "https://go.postman.co/collection/49448049-8bd797ae-db70-493c-bd3e-1815783e9548?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"first_name\": \"Ezequiel\",\r\n    \"last_name\": \"Demetrio\",\r\n    \"email\": \"ezequiel1@example.com\",\r\n    \"password\": \"1234\",\r\n    \"age\": 37\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/auth/register",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"nicolas@example.com\",\r\n    \"password\": \"xample1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/auth/login",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/auth/logout",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "logout"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "My Profile",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/auth/me",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

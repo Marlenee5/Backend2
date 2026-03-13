@@ -1,0 +1,42 @@
+{
+  "info": {
+    "_postman_id": "d8d5b72b-0f18-4e0b-8171-3f9f6806cb63",
+    "name": "Emails",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49448049",
+    "_collection_link": "https://go.postman.co/collection/49448049-d8d5b72b-0f18-4e0b-8171-3f9f6806cb63?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Welcome",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"to\": \"{{to_email}}\",\r\n    \"name\": \"Marlene\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/mail/welcome",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "mail",
+            "welcome"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

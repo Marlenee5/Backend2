@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "4076566e-b0ea-443e-bac6-1838d9b21f20",
+    "name": "Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49448049",
+    "_collection_link": "https://go.postman.co/collection/49448049-4076566e-b0ea-443e-bac6-1838d9b21f20?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Crear producto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Jean MOM\",\r\n  \"description\": \"Calce suelto, con hebillas\",\r\n  \"price\": 85000,\r\n  \"stock\": 40,\r\n  \"category\": \"ropa\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/products",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear orden",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"buyerName\": \"Ana\",\r\n  \"buyerEmail\": \"ana@gmail.com\",\r\n  \"items\": [\r\n    {\r\n      \"productId\": \"69b33b4d570c13a33843d077\",\r\n      \"title\": \"Camiseta\",\r\n      \"quantity\": 2,\r\n      \"price\": 1200\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/orders",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Enlistar productos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/products",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

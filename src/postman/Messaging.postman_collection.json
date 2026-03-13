@@ -1,0 +1,73 @@
+{
+  "info": {
+    "_postman_id": "0be59062-71af-4cb8-b7a6-b0512119e9d5",
+    "name": "Messaging",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49448049",
+    "_collection_link": "https://go.postman.co/collection/49448049-0be59062-71af-4cb8-b7a6-b0512119e9d5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Send SMS",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"to\": \"+541155735512\",\r\n    \"body\": \"Hola, esto es un mensaje desde mi API😊\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/messaging/sms",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "messaging",
+            "sms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Send Whatsapp",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"to\": \"+541155735512\",\r\n    \"body\": \"Hola, esto es un mensaje desde mi API\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/messaging/whatsapp",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "messaging",
+            "whatsapp"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
